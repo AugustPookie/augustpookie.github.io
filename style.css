@@ -1,0 +1,271 @@
+/* styles.css */
+
+/* Reset and Base Styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Lalezar', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#hero {
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.scroll-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #335;
+    transform: translateY(-3px);
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.footer {
+    text-align: center;
+}
+
+/* Projects Section */
+#projects {
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    margin-left: 20px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project {
+    background-color: #dbe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    max-height: 128px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project1 {
+    background-color: #dbe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 10vw;
+    margin-top: -9.2vw;
+}
+.project2 {
+    background-color: #dbe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10vw;
+    margin-top: -8.9vw;
+}
+.project3 {
+    background-color: #dbe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10vw;
+    margin-top: 5vw;
+}
+.project4 {
+    background-color: #dbe6f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 37vw;
+    margin-top: -8.8vw;
+}
+
+
+
+
+/* h3 */
+
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* p */
+
+
+.project p {
+    margin-bottom: 20px;
+}
+.project2 p {
+    margin-bottom: 20px;
+}
+.project1 p {
+    margin-bottom: 20px;
+}
+.project3 p {
+    margin-bottom: 20px;
+}
+.project4 p {
+    margin-bottom: 20px;
+}
+/* a */
+
+.project4 a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.project3 a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.project2 a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.project1 a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.project a:hover {
+    background-color: #335;
+    transform: translateY(-3px);
+}
+
+.project1 a:hover {
+    background-color: #335;
+    transform: translateY(-3px);
+}
+.project2 a:hover {
+    background-color: #335;
+    transform: translateY(-3px);
+}
+.project3 a:hover {
+    background-color: #335;
+    transform: translateY(-3px);
+}
+.project4 a:hover {
+    background-color: #335;
+    transform: translateY(-3px);
+}
+
+.project a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* hover */
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.project1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.project2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.project3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.project4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #777;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>یادداشت های من</h1>
+            <button id="addNoteBtn">افزودن یادداشت</button>
+        </header>
+        <main>
+            <div id="noteContainer"></div>
+        </main>
+    </div>
+
+    <!-- Note Template -->
+    <template id="noteTemplate">
+        <div class="note">
+            <textarea class="note-content" placeholder="یادداشت خود را اینجا تایپ کنید..."></textarea>
+            <div class="note-actions">
+                <button class="delete-btn">حذف</button>
+                <button class="share-btn">اشتراک</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

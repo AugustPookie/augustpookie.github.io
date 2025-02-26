@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>High School Forum</h1>
+    </header>
+    <main>
+        <section id="post-form">
+            <h2>Create a Post</h2>
+            <form id="new-post-form" enctype="multipart/form-data">
+                <input type="text" id="post-title" placeholder="Post Title" required>
+                <textarea id="post-content" placeholder="Post Content" required></textarea>
+                <input type="file" id="post-media" accept="image/*,video/*">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="posts">
+            <h2>Posts</h2>
+            <div id="posts-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

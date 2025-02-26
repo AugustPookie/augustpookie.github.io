@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet - Select Your Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-page">
+        <h1>Select Your Starter Pet</h1>
+        <div class="pet-options">
+            <div class="pet" onclick="startGame('cat')">Cat</div>
+            <div class="pet" onclick="startGame('dog')">Dog</div>
+            <div class="pet" onclick="startGame('rabbit')">Rabbit</div>
+        </div>
+    </div>
+    <script>
+        function startGame(pet) {
+            localStorage.setItem('pet', pet);
+            window.location.href = 'game.html';
+        }
+    </script>
+</body>
+</html>

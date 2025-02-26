@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-page">
+        <h1>Your Virtual Pet</h1>
+        <div id="pet-container">
+            <img id="pet-image" src="dog.png" alt="Pet">
+        </div>
+        <div class="actions">
+            <button onclick="feedPet()">Feed</button>
+            <button onclick="waterPet()">Water</button>
+            <button onclick="petPet()">Pet</button>
+        </div>
+        <div id="pet-status">
+            <p id="hunger">Hunger: 100</p>
+            <p id="thirst">Thirst: 100</p>
+            <p id="happiness">Happiness: 100</p>
+        </div>
+        <button onclick="window.location.href='shop.html'">Go to Shop</button>
+    </div>
+    <script>
+        let pet = localStorage.getItem('pet') || 'cat';
+        let hunger = 100;
+        let thirst = 100;
+        let happiness = 100;
+
+        function updatePetImage() {
+            const petImage = document.getElementById('pet-image');
+            petImage.src = `${pet}.png`; // Replace with actual pet images
+        }
+
+        function updateStatus() {
+            document.getElementById('hunger').textContent = `Hunger: ${hunger}`;
+            document.getElementById('thirst').textContent = `Thirst: ${thirst}`;
+            document.getElementById('happiness').textContent = `Happiness: ${happiness}`;
+        }
+
+        function feedPet() {
+            hunger = Math.min(100, hunger + 10);
+            updateStatus();
+        }
+
+        function waterPet() {
+            thirst = Math.min(100, thirst + 10);
+            updateStatus();
+        }
+
+        function petPet() {
+            happiness = Math.min(100, happiness + 10);
+            updateStatus();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updatePetImage();
+            updateStatus();
+        });
+    </script>
+</body>
+</html>

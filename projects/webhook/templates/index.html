@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Sender</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send Discord Webhook Messages</h1>
+        <form id="messageForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label for="times">Number of Times:</label>
+            <input type="number" id="times" name="times" min="1" required>
+            
+            <button type="submit">Send Messages</button>
+        </form>
+        <div id="response" class="hidden"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="shop-page">
+        <h1>Shop</h1>
+        <div class="upgrades">
+            <div class="upgrade">
+                <h2>New Toy</h2>
+                <button onclick="buyUpgrade('toy')">Buy for 50 Coins</button>
+            </div>
+            <div class="upgrade">
+                <h2>Fancy Food</h2>
+                <button onclick="buyUpgrade('food')">Buy for 100 Coins</button>
+            </div>
+            <div class="upgrade">
+                <h2>Deluxe Bed</h2>
+                <button onclick="buyUpgrade('bed')">Buy for 200 Coins</button>
+            </div>
+        </div>
+        <button onclick="window.location.href='game.html'">Back to Game</button>
+    </div>
+    <script>
+        function buyUpgrade(upgrade) {
+            // Implement upgrade logic here
+            alert(`Bought ${upgrade}`);
+        }
+    </script>
+</body>
+</html>
